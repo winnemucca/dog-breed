@@ -1,0 +1,34 @@
+// bootstrap overwrite with time move to own file
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+.nav
+{
+  .navbar-toggler, .nav-link {
+    color: #fff;
+  }
+
+  .nav-link {
+    text-decoration: underline
+  }
+
+  .navbar-toggler {
+    flex-basis: 100%;
+    text-align: left;
+    .navbar-toggler-icon {
+      display: inline;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .nav {
+    .navbar-toggler {
+      flex-basis: 70%;
+      .navbar-toggler-icon {
+        margin-left: 12px;
+      }
+    }
+  }
+}

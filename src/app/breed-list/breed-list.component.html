@@ -1,0 +1,13 @@
+<section class="breed-list-display">
+  <h6 class="breed-list-display__title">Dog breeds</h6>
+  <span *ngIf="errorMessage">
+    error {{errorMessage}}
+  </span>
+  <div class="breed-list-display__list" *ngIf="breedListDisplay$ | async as breedListDisplay">
+    <ul *ngFor="let breed of breedListDisplay" class="list-group">
+      <li class="list-item">
+        {{breed}}
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+$list-size: 1rem;
+.breed-list-display {
+  margin: 1rem 2rem;
+
+  &__title {
+    font-size: $list-size;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  &__list {
+    height: 300px;
+    overflow: scroll;
+    .list-group {
+      padding: 1rem 0;
+      font-size: $list-size;
+      list-style: none;
+      .list-item::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+  }
+}
